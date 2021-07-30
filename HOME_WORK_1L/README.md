@@ -13,8 +13,8 @@
     * адаптация модулей под дизайн сайта  
 
 **Примеры моих работ**  
-* [https://tourpro.travel/](https://tourpro.travel/ "https://tourpro.travel/") - Туристический  оператор
-* [http://a-touristik.com.ua/](http://a-touristik.com.ua/ "http://a-touristik.com.ua/") - Туристический  оператор
+* [https://tourpro.travel/](https://tourpro.travel/ "https://tourpro.travel/") - **Туристический  оператор**
+* [http://a-touristik.com.ua/](http://a-touristik.com.ua/ "http://a-touristik.com.ua/") - **Туристический  оператор**
 
 ### _**опыт управления проектами**_
 * прототипирование систем бронирования круизов, отелей
@@ -23,19 +23,19 @@
 * постановка задач в системах учета
 
 **Примеры реализованных проектов** 
-* [https://cruisexpress.com.ua/](https://cruisexpress.com.ua/ "https://cruisexpress.com.ua/") - представитель круизной компании Royal Caribbean на Украине
+* [https://cruisexpress.com.ua/](https://cruisexpress.com.ua/ "https://cruisexpress.com.ua/") - **представитель круизной компании Royal Caribbean на Украине**
     * прототипирование
     * подключение по API 3 круизных компаний
     * внутренняя система учета заказов 
     * базы данных туристы, туристические агентства 
     * реализация всех шагов поиска и бронирования круизов  
-* [https://mvoyage.com.ua/](https://mvoyage.com.ua/ "https://mvoyage.com.ua/") - система бронирования круизов
+* [https://mvoyage.com.ua/](https://mvoyage.com.ua/ "https://mvoyage.com.ua/") - **система бронирования круизов**
     * прототипирование
     * подключение по API 15 круизных компаний
     * внутренняя система учета заказов 
     * базы данных туристы, туристические агентства 
     * реализация всех шагов поиска и бронирования круизов
-* [https://mscruise.com.ua/](https://mscruise.com.ua/ "https://mscruise.com.ua/") - система бронирования круизов MSC cruisexpress
+* [https://mscruise.com.ua/](https://mscruise.com.ua/ "https://mscruise.com.ua/") - **система бронирования круизов MSC Cruises**
     * подключение по API MSC Cruises
     * внутренняя система учета заказов 
     * базы данных туристы, туристические агентства 
