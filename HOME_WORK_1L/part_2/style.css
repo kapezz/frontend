@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Audi Type';
+    src: url('font/AudiType-ExtendedNormal.eot');
+    src: local('Audi Type Extended Normal'), local('AudiType-ExtendedNormal'),
+        url('font/AudiType-ExtendedNormal.eot?#iefix') format('embedded-opentype'),
+        url('font/AudiType-ExtendedNormal.woff2') format('woff2'),
+        url('font/AudiType-ExtendedNormal.woff') format('woff'),
+        url('font/AudiType-ExtendedNormal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bw Modelica';
+    src: url('font/BwModelicaCyrillicDEMO-Regular.eot');
+    src: local('Bw Modelica Cyrillic DEMO Regular'), local('BwModelicaCyrillicDEMO-Regular'),
+        url('./font/BwModelicaCyrillicDEMO-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/BwModelicaCyrillicDEMO-Regular.woff2') format('woff2'),
+        url('font/BwModelicaCyrillicDEMO-Regular.woff') format('woff'),
+        url('font/BwModelicaCyrillicDEMO-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bw Modelica';
+    src: url('font/BwModelicaCyrillicDEMO-Bold.eot');
+    src: local('Bw Modelica Cyrillic DEMO Bold'), local('BwModelicaCyrillicDEMO-Bold'),
+        url('font/BwModelicaCyrillicDEMO-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/BwModelicaCyrillicDEMO-Bold.woff2') format('woff2'),
+        url('font/BwModelicaCyrillicDEMO-Bold.woff') format('woff'),
+        url('font/BwModelicaCyrillicDEMO-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bw Modelica';
+    src: url('font/BwModelicaCyrillicDEMO-ExtraBold.eot');
+    src: local('Bw Modelica Cyrillic DEMO ExtraBold'), local('BwModelicaCyrillicDEMO-ExtraBold'),
+        url('font/BwModelicaCyrillicDEMO-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/BwModelicaCyrillicDEMO-ExtraBold.woff2') format('woff2'),
+        url('font/BwModelicaCyrillicDEMO-ExtraBold.woff') format('woff'),
+        url('font/BwModelicaCyrillicDEMO-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    position: relative;
+}
+
+.leftBlock {
+    float: left;
+    width: 270px;
+    height: 612px;
+}
+.gradient {
+    position: absolute;
+    width: 270px;
+    height: 125px;
+    top: 487px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.gradient h1 {
+    font-family: 'Bw Modelica';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-left:16px;
+}
+.gradient p {
+    font-family: 'Bw Modelica';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color:white;
+    margin:16px 0 0 16px;
+}
+.gradient p:nth-child(3) {
+    margin-top:8px;
+}
+.rightBlock {
+    float: left;
+    width: 630px;
+}
+header {
+    height: 113px;
+}
+.firstText {
+    font-family: Arial;
+    font-size: 72px;
+    /*line-height: 83px;*/
+    letter-spacing: 0em;
+    /*text-align: left;*/
+    color:#C4C4C4;
+    position: absolute;
+    /*height: 83px;*/
+    width: 36px;
+    left: 294px;
+    top: 30px;
+}
+.rightBlock h1  {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    position: absolute;
+    left: 350px;
+    top: 32px;
+}
+span.secondText {
+    position: absolute;
+    left: 350px;
+    top: 53px;
+    color:#666666;
+    font-family: Arial;
+    font-size: 18px;    
+    line-height: 21px;
+    letter-spacing: 0em;
+    font-weight: bold;
+}
+.rightBlockB {
+    height:499px;
+    background: #F9F9F9;
+    position: absolute;
+    width: 550px;
+    padding:0 0 0 80px;
+}
+.drive {
+    margin-left: 15px;
+}
+ul {
+    list-style-type: disc !important;
+}
+.rightBlockB h2 {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    padding-bottom: 8px;
+    margin-top:36px
+}
+ul li {
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 15px;
+    
+}
+.logo {
+    width:113px;
+    height: 44px;
+    position: absolute;
+    background:#FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    left: 517px;
+    top: 454px;
+}
+.logo span {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Audi Type';    
+    font-weight: bold;
+    line-height: 29px;
+    font-size: 24px;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+}
