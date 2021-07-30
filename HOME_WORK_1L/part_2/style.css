@@ -49,7 +49,6 @@ body {
 .main {
     position: relative;
 }
-
 .leftBlock {
     float: left;
     width: 270px;
@@ -92,12 +91,9 @@ header {
 .firstText {
     font-family: Arial;
     font-size: 72px;
-    /*line-height: 83px;*/
     letter-spacing: 0em;
-    /*text-align: left;*/
     color:#C4C4C4;
     position: absolute;
-    /*height: 83px;*/
     width: 36px;
     left: 294px;
     top: 30px;
