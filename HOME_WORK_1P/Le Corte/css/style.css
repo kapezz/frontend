@@ -8,4 +8,5 @@ header {
     height: 900px;
     background: url('../img/bgc.jpg') no-repeat top top;
     width: 1920px;
+   /* background-size: 80% 50%;*/
 }
