@@ -19,7 +19,7 @@ header {
 }
 nav {
     height:100px;
-    outline:1px solid #FFF;
+
 }
 nav p {
     color:#fff;
@@ -33,14 +33,25 @@ nav p:nth-child(2) {
 .clear {
     clear:both;
 }
-ul li {
-    height:46px;
-    border:1px solid #FFF;
-    width:100px;
-    
-}
 ul li a{
     color:#FFF;
     text-decoration:none;
     font-size:14px;
+    border:1px solid #FFF;
+    border-left:none;
+    height:46px;
+    display: block;
+    width:274px;
+    float: left;
+    text-align: center;
+    line-height: 43px;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+ul li a:last-child {
+    border-right:none;
+}
+header button {
+    margin-top:500px;
 }
