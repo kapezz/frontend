@@ -1,0 +1,60 @@
+@import "reset.css" screen;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size:29px;
+    
+}
+
+{box-sizing: border-box; }
+
+.flex__container {
+    background: rgb(0, 150, 208); 
+    display: flex; 
+    height: 800px; 
+    align-content: flex-start; 
+    justify-content: space-around; 
+    flex-direction: row;
+}
+
+.tesy {
+    background: rgb(241, 101, 41); 
+    border: 1px solid; 
+    width: 10%; 
+}
+
+
+
+/*
+.wrap {
+    width:800px;
+    height: 1795px;
+    background: grey;
+    flex-wrap: wrap;
+    display: 0 0 flex;    
+} 
+
+.days__of__the_week ul li {
+    background: red;
+    outline: 1px solid white;
+    width: 500px;    
+    display: inline-block;
+    justify-content: space-between;
+
+}
+
+.days__of__the_week {
+    background: blue;
+    outline: 5px solid white;
+
+    
+}
+*/
+
+/*
+.month {
+    flex-wrap: nowrap;
+    background: white;
+}
+*/
