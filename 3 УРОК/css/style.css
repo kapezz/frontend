@@ -4,57 +4,148 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size:29px;
-    
+    line-height: 34px;
+    font-size: 24px;
 }
-
-{box-sizing: border-box; }
-
-.flex__container {
+.flex__container__ {
     background: rgb(0, 150, 208); 
     display: flex; 
-    height: 800px; 
-    align-content: flex-start; 
-    justify-content: space-around; 
-    flex-direction: row;
+    height: 800px;
+    width:800px; 
+    justify-content:space-around; /*выравниваем дочерний блок и говорим как он должен располагаться*/
+    flex-wrap: wrap; /*говорим ему должен ли он переносить блоки на след блок или нет*/
+    align-content: flex-start; /*выравниваем расположение по оси вертикальной контент*/
+    flex-direction: column; /*напрfавление блока - элементы направяються или по умолчанию по горизонтали, либо колонка - будут располо
+    жены колонкой*/     
 }
 
-.tesy {
-    background: rgb(241, 101, 41); 
-    border: 1px solid; 
-    width: 10%; 
-}
-
-
-
-/*
+/*-------------------------------BEGIN------------------------------*/
 .wrap {
-    width:800px;
-    height: 1795px;
-    background: grey;
-    flex-wrap: wrap;
-    display: 0 0 flex;    
-} 
-
-.days__of__the_week ul li {
-    background: red;
-    outline: 1px solid white;
-    width: 500px;    
-    display: inline-block;
-    justify-content: space-between;
-
+    width: 800px;
+    background:rgba(42, 46, 65, 0.7);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
 }
-
-.days__of__the_week {
-    background: blue;
-    outline: 5px solid white;
-
-    
-}
-*/
-
-/*
 .month {
-    flex-wrap: nowrap;
-    background: white;
+    display: flex;
+    justify-content: center;
+    height: 208px;
+    align-items: center;
+    position: relative;
+
 }
-*/
+.month::after {
+    content:"";
+    background: url(../img/arrow_right.svg) no-repeat;
+    top:10px;
+    right: 0;
+    top:83px;
+    width:20px;
+    height: 38px;
+    position: absolute;
+}
+.month::before{
+    content:"";
+    background: url(../img/arrow_left.svg) no-repeat;
+    top:83px;
+    left:0px;
+    width:20px;
+    height: 38px;
+    position: absolute;
+}
+.month h2 {
+    align-content:center;   
+    font-size: 1.5em;
+    color:#FFF;
+}
+.days__of__the_week ul li {
+    color:rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+}
+.days__of__the_week, .days, .month, .buttons {
+    width: 599px;
+}
+.days__of__the_week {
+    padding-top: 67px;
+    height: 77px;
+    border-top:2px solid rgba(0, 0, 0, 0.17);
+    position: relative;
+}
+.days__of__the_week::before {
+    content:"";
+    position: absolute;
+    border-bottom:2px solid rgba(255, 255, 255, 0.12); 
+    top:0;
+    width: 100%;
+}
+.days__of__the_week ul, .days ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+.days {
+    border-bottom:2px solid rgba(0, 0, 0, 0.17); 
+    position: relative;
+    padding-bottom: 124px;
+}
+.days .next__month {
+    color:rgba(255, 255, 255, 0.5); 
+}
+.days::before {
+    content:"";
+    position: absolute;
+    border-bottom:2px solid rgba(255, 255, 255, 0.12); 
+    top: 526px;
+    width: 100%;
+}
+.days ul li {
+    color:rgba(255, 255, 255, 1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.days ul li.active {
+    background:#3C82F9;
+    border-radius: 50%;
+}
+.buttons {
+    padding:107px 0 341px 0;
+    display: flex;
+    flex-flow: wrap;
+}
+.buttons p {
+    color:#FFF;
+    font-size: 1.0833em; 
+    display: flex;
+    width: 100%;
+    padding-bottom: 42px;
+}
+.buttons button {
+    background:#8576ED;
+    width: 285px;
+    height: 80px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-size: 0.7586em;
+    border:none;
+    color:#FFF;
+}
+.buttons button:nth-child(1){
+    background:#8576ED;
+}
+.buttons button:nth-child(3) {
+    background:#F39946;
+    margin-left: 28px;
+}
+.buttons button:last-child {
+    background:#FF467E;
+    margin-top: 30px;
+}

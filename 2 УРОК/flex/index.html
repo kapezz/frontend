@@ -4,58 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex</title>
-<style>
+    <title>Flex Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <Style>
+        {box-sizing: border-box; }
 
-div:not(.testyu) {
-    width: 250px;
-    height: 250px;
-    background-color: yellow;
-    outline:2px solid red;
-    /*display: flex;*/
-}    
-.testyu {
-    width: 100%;
-    height: 500px;
-    background-color: blue;
-    color:white;
-    border:5px solid black;
-}
-section{
-    /*display: flex;*/
-}
+    .wrap {
+        background: rgb(0, 150, 208); 
+        display: flex; 
 
-</style>
+        
+    }    
 
+    .flex__container {
+        background: rgb(0, 150, 208); 
+        display: flex; 
+        height: 800px;
+        width:800px; 
+        justify-content:center ; /*выравниваем дочерний блок и говорим как он должен располагаться*/
+        flex-wrap: wrap; /*говорим ему должен ли он переносить блоки на след блок или нет*/
+        align-content: flex-start; /*выравниваем расположение по оси вертикальной контент*/
+        flex-direction: column; /*направление блока - элементы направяються или по умолчанию по горизонтали, либо колонка - будут располо
+        жены колонкой*/
+        }
+        .tesy {
+            background: rgb(241, 101, 41); 
+            border: 1px solid; 
+            width: 10%; 
+            margin-left:10px;
+            height: 20%;
+            text-align: center;
+        }
+        .tesy:last-child {
+            order:-1; /*изменяет расположение конкретного элемента*/
+            background:red;
+        }
 
-
+    </Style>
 </head>
 <body>
-    
-    <section>
-        <h1>some text</h1>
-        <div class="test1">1- lorem ipsum</div>
-        <div class="test2">2 - lorem ipsum</div>
-        <div class="test3">3 - lorem ipsum</div>
-        <div class="test4">4 - lorem ipsum</div>
-        <div class="test5">5 - lorem ipsum</div>
-    </section>
-
-    <main>
-        <div class="testyu">
-            <ul>
-                <li>1 - this is sparta</li>
-                <li>2 - this is sparta</li>
-                <li>3 - this is sparta</li>
-                <li>4 - this is sparta</li>
-                <li>5 - this is sparta</li>
-                <li>6 - this is sparta</li>
-                <li>7 - this is sparta</li>
-                <li>8 - this is sparta</li>
-            </ul>
-        </div>
-    </main>
-
-
+   <div class="wrap">
+    <div class="flex__container">
+           <div class="tesy">1</div>
+           <div class="tesy">2</div>
+           <div class="tesy">3</div>
+           <div class="tesy">4</div>
+           <div class="tesy">5</div>
+           <div class="tesy">1</div>
+           <div class="tesy">2</div>
+    </div>
+    <div class="flex__container2">
+        <div class="tesy">1</div>
+           <div class="tesy">2</div>
+           <div class="tesy">3</div>
+           <div class="tesy">4</div>
+           <div class="tesy">5</div>
+           <div class="tesy">1</div>
+           <div class="tesy">2</div>
+    </div>
+    <div class="flex__container3">
+        <div class="tesy">1</div>
+        <div class="tesy">2</div>
+        <div class="tesy">3</div>
+        <div class="tesy">4</div>
+        <div class="tesy">5</div>
+        <div class="tesy">1</div>
+        <div class="tesy">2</div>
+ </div>
+</div>
+ 
 </body>
 </html>
