@@ -1,0 +1,56 @@
+body {
+    margin:0;
+    padding: 0;
+}
+.logo, 
+.nav, 
+.news, 
+.list,
+.navbar, 
+.footer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    display: grid;
+    grid-template-areas:     
+    "logo nav nav"
+    "news list navbar"
+    "footer footer navbar";
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-columns: 100px 65fr 35fr;
+    min-height: 100vh;
+}
+.logo {
+    grid-area: logo;
+    background:yellow;
+}
+.nav {
+    grid-area: nav;
+    background:blue;
+    color:#FFF;
+}
+.news {
+    grid-area: news;
+    min-height: 300px;
+    background:brown;
+    color:#FFF;
+    
+}
+.list {
+    grid-area: list;
+    min-height: 300px;
+    background:chartreuse;
+}
+.navbar {
+    grid-area: navbar;
+    min-height: 450px;
+    background:darkcyan;
+    color:#FFF;
+}
+.footer {
+    background:gray;
+    color:#FFF;
+    grid-area: footer;
+}

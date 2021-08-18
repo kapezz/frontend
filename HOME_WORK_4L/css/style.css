@@ -29,6 +29,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*max 1800 px*/
 @media (max-width: 1800px) {
     .first {
         display:flex;
@@ -57,7 +58,7 @@ body {
         display: flex;
     }
 }
-
+/*max 1200 px*/
 @media (max-width: 1200px) {
     .first {
         display:flex;
@@ -97,6 +98,7 @@ body {
         flex:0 1 33.33%;
     }
 }
+/*max 960 px*/
 @media (max-width: 960px) {
     .first {
         display:flex;
@@ -137,6 +139,7 @@ body {
         display: none;
     }
 }
+/*max 768 px*/
 @media (max-width: 768px) {
     .first {
         display:flex;
