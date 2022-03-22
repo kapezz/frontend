@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Work Lesson 7 - TEST2</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <script>
+        const n = prompt('Введите 1 число');
+        const c = prompt('Введите 2 число');
+
+
+        if (n === null) {
+            alert('Вы отказались вводить информацию.');
+        } else {
+            const d = parseInt(n);
+            const r = parseInt(c);
+
+            if (isNaN(d)) {
+                alert('Вы ввели не число');
+            } else {
+                
+                consoleNSimpledigit(d, r);
+            }
+        }
+    </script>
+
+<script>
+    let userWantsContinue = true;
+
+    for (let i = 2; userWantsContinue; i = getNextSimple(i)) {
+        userWantsContinue = confirm(`Текущее число ${i}. Хотите ли продолжить?`);
+
+        console.log(i);
+    }
+    
+    function getNextSimple(n) {
+        let d = n+1;
+
+        for (; consoleNSimpledigit(d); d++) {}
+        
+
+        return d;
+    }
+</script>
+
+<!--
+<script>
+    let userWantsContinue = true;
+
+    for (let i = 1; userWantsContinue; i = getNextSimple(i)) {
+        userWantsContinue = confirm(`Текущее число ${i}. Хотите ли продолжить?`);
+
+        console.log(i);
+    }
+
+    function getNextSimple(n) {
+        let d = n+1;
+
+        for (; !isSimple(d); d++) {}
+        
+
+        return d;
+    }
+</script>
+-->
+
+</body>
+</html>

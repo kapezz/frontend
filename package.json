@@ -1,0 +1,27 @@
+{
+  "name": "fe2907",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapezz/fe2907.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kapezz/fe2907/issues"
+  },
+  "homepage": "https://github.com/kapezz/fe2907#readme",
+  "dependencies": {
+    "eslint-config-recommended": "^4.1.0",
+    "stylelint": "^13.13.1"
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
